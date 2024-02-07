@@ -1,0 +1,111 @@
+@keyframes dotsAnimation {
+    0% {
+      content: "";
+    }
+    25% {
+      content: ".";
+    }
+    50% {
+      content: "..";
+    }
+    75%{
+        content:"..."
+    }
+    100% {
+      content: "";
+    }
+  }
+  
+  .loading-text::after {
+    content: ".";
+    animation: dotsAnimation 1.5s infinite;
+
+  }
+
+  .country_wrapper{
+    background: #c1ddde;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 1rem 0 3rem;
+    padding: 1rem;
+  }
+
+  .country{
+    display: block; 
+    min-width: 18rem;
+    max-width: 18rem;
+    max-height:32rem; 
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    text-align: center;
+    border-radius: 5%;
+    transition: transform 1s, box-shadow 1s;
+    margin: 1rem
+
+  }
+
+  .country:hover{
+    box-shadow: 0 0 3px grey;
+    transform: scale(1.05)
+
+  }
+
+  .country_name{
+    text-align:center; 
+    color:orange; 
+    letter-spacing: .010rem; 
+    font-size: 1.4rem;
+    font-weight:350;
+    text-transform: uppercase;
+    font-family: "Poppins",sans-serif;
+  }
+
+  .country_text{
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    letter-spacing: .05rem;
+    font-family: "Poppins",sans-serif;
+    color: #616161;
+
+  }
+
+  .country_flag{
+    max-height: 8rem;
+    max-width: 12rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 0.5px 0.5px 3px 0.5px black;
+    
+}
+  
+.main_header{
+    text-align: center;
+    background-color: #c1ddde;
+    padding: 0.1rem;
+
+}
+
+.input_div{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+
+}
+
+#Search{
+  width: 100%;
+  background-color: #c1ddde;
+  color: grey;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
