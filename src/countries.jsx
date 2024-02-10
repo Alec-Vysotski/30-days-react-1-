@@ -84,7 +84,8 @@ const Countries = () => {
     
 
     const handleChange = (e) => {
-      const value = e.target.value
+      let value = e.target.value
+      value = value.replace(/\s/g, '');
       setSearch(value)
 
       if(!searchTerm){

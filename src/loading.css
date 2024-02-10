@@ -18,24 +18,24 @@
   
   .loading-text::after {
     content: ".";
-    animation: dotsAnimation 1.5s infinite;
+    animation: dotsAnimation 1.05s infinite;
 
   }
 
   .country_wrapper{
-    background: #c1ddde;
+    background: #82caed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
     margin: 1rem 0 3rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .country{
     display: block; 
-    min-width: 18rem;
-    max-width: 18rem;
+    min-width: 20rem;
+    max-width: 20rem;
     max-height:32rem; 
     background-color: white;
     padding-top: 2rem;
@@ -43,15 +43,15 @@
     padding-left: 1rem;
     padding-right: 1rem; 
     text-align: center;
-    border-radius: 5%;
-    transition: transform 1s, box-shadow 1s;
+    border-radius: 7%;
+    transition: transform 0.7s, box-shadow 0s;
     margin: 1rem
 
   }
 
   .country:hover{
-    box-shadow: 0 0 3px grey;
-    transform: scale(1.05)
+    box-shadow: 0 0 7px grey;
+    transform: scale(1.1)
 
   }
 
@@ -87,21 +87,24 @@
   
 .main_header{
     text-align: center;
-    background-color: #c1ddde;
+    background-color: #82caed;
     padding: 0.1rem;
-
+    font-family: "Poppins",sans-serif;
 }
 
 .input_div{
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
 
 }
 
 #Search{
-  width: 100%;
-  background-color: #c1ddde;
+  width: 90%;
+  background-color: #82caed;
   color: grey;
   padding: 14px 20px;
   margin: 8px 0;
