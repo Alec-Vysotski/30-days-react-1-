@@ -85,10 +85,12 @@ const Countries = () => {
 
     const handleChange = (e) => {
       let value = e.target.value
-      value = value.replace(/\s/g, '');
+      if(value.replace(/\s/g, '') === ''){
+        value = ''
+      }
       setSearch(value)
 
-      if(!searchTerm){
+      if(searchTerm === ''){
         fetchData('https://restcountries.com/v3.1/all')
       }else{
         fetchData(`https://restcountries.com/v3.1/name/${searchTerm}`)
@@ -140,7 +142,7 @@ const Countries = () => {
         <div id="main" style={{width:'100%'}} >
         <header className='main_header'>
           <h1>World Countries Data</h1>
-          <p>Currently, we have {data.length} countries</p>
+          <p>Currently, showing results for {data.length} countries</p>
         </header>
         <div class='input_div'>
           <input
